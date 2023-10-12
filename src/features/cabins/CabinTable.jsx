@@ -23,7 +23,7 @@ const TableHeader = styled.header`
   border-bottom: 1px solid var(--color-grey-100);
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-grey-600);
   padding: 1.6rem 2.4rem;
 `;
@@ -34,7 +34,7 @@ function CabinTable() {
     isLoading,
     error,
   } = useQuery({
-    queryKey: ["cabin"],
+    queryKey: ["cabins"],
     queryFn: getCabins,
   });
 
