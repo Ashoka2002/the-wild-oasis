@@ -74,10 +74,11 @@ function Open({ opens: opensWindowName, children }) {
 
 function Window({ name, children }) {
   const { openName, close } = useContext(ModalContext);
+
   if (name !== openName) return null;
 
   return createPortal(
-    <Overlay>
+    <Overlay onClick={close}>
       <StyledModal>
         <Button onClick={close}>
           <HiXMark />
