@@ -47,6 +47,8 @@ export async function createEditCabin(newCabin, id) {
       .eq("id", id)
       .select();
 
+  console.log({ ...newCabin, image: imagePath });
+
   const { data, error } = await query.select().single();
 
   if (error) {

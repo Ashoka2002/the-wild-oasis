@@ -32,7 +32,10 @@ function UpdateSettingsForm() {
           id="min-nights"
           disabled={isUpdating}
           defaultValue={minBookingLength}
-          onBlur={(e) => handleUpdate(e, "minBookingLength")}
+          onBlur={(e) => {
+            if (+e.target.value === minBookingLength) return;
+            handleUpdate(e, "minBookingLength");
+          }}
         />
       </FormRow>
       <FormRow label="Maximum nights/booking">
@@ -41,7 +44,10 @@ function UpdateSettingsForm() {
           id="max-nights"
           defaultValue={maxBookingLength}
           disabled={isUpdating}
-          onBlur={(e) => handleUpdate(e, "maxBookingLength")}
+          onBlur={(e) => {
+            if (+e.target.value === maxBookingLength) return;
+            handleUpdate(e, "maxBookingLength");
+          }}
         />
       </FormRow>
       <FormRow label="Maximum guests/booking">
@@ -50,7 +56,10 @@ function UpdateSettingsForm() {
           id="max-guests"
           defaultValue={minGuestsPerBookings}
           disabled={isUpdating}
-          onBlur={(e) => handleUpdate(e, "minGuestsPerBookings")}
+          onBlur={(e) => {
+            if (+e.target.value === minGuestsPerBookings) return;
+            handleUpdate(e, "minGuestsPerBookings");
+          }}
         />
       </FormRow>
       <FormRow label="Breakfast price">
@@ -59,7 +68,10 @@ function UpdateSettingsForm() {
           id="breakfast-price"
           defaultValue={breakfastPrice}
           disabled={isUpdating}
-          onBlur={(e) => handleUpdate(e, "breakfastPrice")}
+          onBlur={(e) => {
+            if (+e.target.value === breakfastPrice) return;
+            handleUpdate(e, "breakfastPrice");
+          }}
         />
       </FormRow>
     </Form>
