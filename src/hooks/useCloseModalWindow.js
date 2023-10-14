@@ -6,7 +6,6 @@ export function useCloseModalWindow(close) {
   useEffect(
     function () {
       function handleClick(e) {
-        console.log("hello");
         if (ref.current && !ref.current.contains(e.target)) {
           close();
         }
