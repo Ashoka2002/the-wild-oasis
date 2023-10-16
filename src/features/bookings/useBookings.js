@@ -19,9 +19,13 @@ export function useBookings() {
 
   const sortBy = { field, direction };
 
-  const { error, isLoading, data } = useQuery({
+  const {
+    error,
+    isLoading,
+    data: { data, count },
+  } = useQuery({
     queryKey: ["bookings", filter, sortBy],
     queryFn: () => getBookings({ filter, sortBy }),
   });
-  return { error, isLoading, data };
+  return { error, isLoading, data, count };
 }
