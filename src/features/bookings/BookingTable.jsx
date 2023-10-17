@@ -6,6 +6,7 @@ import Menus from "../../ui/Menus";
 import Empty from "../../ui/Empty";
 import Spinner from "../../ui/Spinner";
 import Pagination from "../../ui/Pagination";
+import { PAGE_SIZE } from "../../utils/constance";
 
 function BookingTable() {
   const { isLoading, error, data: bookings = [], count } = useBookings();
@@ -33,9 +34,11 @@ function BookingTable() {
           )}
         />
 
-        <Table.Footer>
-          <Pagination count={count} />
-        </Table.Footer>
+        {count > PAGE_SIZE && (
+          <Table.Footer>
+            <Pagination count={count} />
+          </Table.Footer>
+        )}
       </Table>
     </Menus>
   );
