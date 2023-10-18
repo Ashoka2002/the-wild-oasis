@@ -12,7 +12,7 @@ export function useLogin() {
     onSuccess: (user) => {
       console.log("user:", user);
       queryClient.setQueryData(["user"], user.user);
-      navigate("/");
+      navigate("/", { replace: true });
     },
     onError: (err) => {
       console.error("ERROR:", err);
