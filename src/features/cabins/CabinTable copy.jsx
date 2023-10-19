@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Spinner from "../../ui/Spinner";
 import CabinRow from "./CabinRow";
 import { useCabin } from "./useCabin";
-import Menus from "../../ui/Menus";
 
 const Table = styled.div`
   border: 1px solid var(--color-grey-200);
