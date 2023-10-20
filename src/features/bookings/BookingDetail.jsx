@@ -16,6 +16,7 @@ import { HiArrowUpOnSquare, HiTrash } from "react-icons/hi2";
 import { useCheckout } from "../check-in-out/useCheckout";
 import Menus from "../../ui/Menus";
 import Modal from "../../ui/Modal";
+import Empty from "../../ui/Empty";
 import ConfirmDelete from "../../ui/ConfirmDelete";
 import { useDeleteBooking } from "./useDeleteBooking";
 
@@ -32,6 +33,8 @@ function BookingDetail() {
   const { isCheckingout, checkout } = useCheckout();
   const { isDeleting, deleteBooking } = useDeleteBooking();
   if (isLoading) return <Spinner />;
+
+  if (!booking) return <Empty resource="booking" />;
 
   const { status, id: bookingId } = booking;
 
