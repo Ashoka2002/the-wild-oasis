@@ -90,7 +90,7 @@ function SalesChart({ bookings, numDays }) {
           />
           <Area
             dataKey="extrasSales"
-            type="bump"
+            type="monotone"
             stroke={colors.extrasSales.stroke}
             fill={colors.extrasSales.fill}
             strokeWidth={2}

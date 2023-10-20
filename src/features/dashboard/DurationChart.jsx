@@ -123,7 +123,6 @@ function prepareData(startData, stays) {
     );
   }
 
-  console.log(stays);
   const data = stays
     .reduce((arr, cur) => {
       const num = cur.numNights;
@@ -158,7 +157,7 @@ function DurationChart({ confirmedStays }) {
             dataKey="value"
             innerRadius={85}
             outerRadius={110}
-            cx="40%"
+            cx="42%"
             cy="50%"
             paddingAngle={3}
           >
@@ -170,7 +169,12 @@ function DurationChart({ confirmedStays }) {
               />
             ))}
           </Pie>
-          <Tooltip />
+          <Tooltip
+            contentStyle={{
+              fontWeight: 600,
+              background: "#fff",
+            }}
+          />
           <Legend
             verticalAlign="middle"
             align="right"
