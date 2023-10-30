@@ -157,7 +157,7 @@ function DurationChart({ confirmedStays }) {
             dataKey="value"
             innerRadius={85}
             outerRadius={110}
-            cx="42%"
+            cx="50%"
             cy="50%"
             paddingAngle={3}
           >

@@ -30,9 +30,9 @@ function IsResponsive() {
   return (
     <NoticeContainer>
       <NoticeText>
-        This webpage is optimized for screens 1224px and above. It is not
+        This webpage is optimized for screens 1024px and above. It is not
         responsive for smaller devices. For the best experience, please use a
-        desktop or a device with a screen size of 1224px or larger.
+        desktop or a device with a screen size of 1024px or larger.
       </NoticeText>
       <ExploreText>
         If you wish to explore, consider using the desktop mode in your browser.

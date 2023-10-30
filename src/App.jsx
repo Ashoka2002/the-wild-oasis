@@ -29,7 +29,7 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1224px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
 
   return isBigScreen ? (
     <QueryClientProvider client={queryClient}>
