@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 const NoticeContainer = styled.div`
-  width: 100%;
   height: 100vh;
   overflow: auto;
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #111827;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +14,15 @@ const NoticeContainer = styled.div`
 
 const NoticeText = styled.p`
   padding: 1rem;
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: #f9fafb;
   text-align: center;
 `;
 
 const ExploreText = styled.p`
-  font-size: 2rem;
-  color: #666;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #0cc754;
   margin-top: 10px;
 `;
 
