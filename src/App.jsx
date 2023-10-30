@@ -13,6 +13,7 @@ import Settings from "./pages/Settings";
 import Users from "./pages/Users";
 import IsResponsive from "./ui/IsResponsive";
 import AppLayout from "./ui/AppLayout";
+
 import { Toaster } from "react-hot-toast";
 import Booking from "./pages/Booking";
 import Checkin from "./pages/Checkin";
