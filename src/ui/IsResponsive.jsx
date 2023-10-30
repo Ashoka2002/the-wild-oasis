@@ -5,6 +5,7 @@ const NoticeContainer = styled.div`
   overflow: auto;
   text-align: center;
   padding: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #111827;
   display: flex;
   justify-content: center;
@@ -19,13 +20,6 @@ const NoticeText = styled.p`
   text-align: center;
 `;
 
-const ExploreText = styled.p`
-  padding: 1rem;
-  font-size: 1rem;
-  color: #0cc754;
-  margin-top: 10px;
-`;
-
 function IsResponsive() {
   return (
     <NoticeContainer>
@@ -34,9 +28,6 @@ function IsResponsive() {
         responsive for smaller devices. For the best experience, please use a
         desktop or a device with a screen size of 1024px or larger.
       </NoticeText>
-      <ExploreText>
-        If you wish to explore, consider using the desktop mode in your browser.
-      </ExploreText>
     </NoticeContainer>
   );
 }
