@@ -177,7 +177,7 @@ function DurationChart({ confirmedStays }) {
           />
           <Legend
             verticalAlign="middle"
-            align="right"
+            align="left"
             width="30%"
             layout="vertical"
             iconSize={15}
