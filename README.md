@@ -25,4 +25,5 @@ Welcome to "The Wild Oasis," an all-encompassing React-based hotel management we
 - **react-icons:** Versatile collection of customizable icons for React projects.
 - **react-hook-form:** Library specializing in form state management and validation within React applications.
 
-- **See live:** 👉 https://the-wild-oasis-ashok.vercel.app/login
+
+ **See live:** 👉 https://the-wild-oasis-ashok.vercel.app/login
