@@ -18,6 +18,9 @@ const Main = styled.main`
   }
   padding: 4rem 2rem 6.4rem;
   overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Container = styled.div`
