@@ -11,7 +11,6 @@ import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
 import Settings from "./pages/Settings";
 import Users from "./pages/Users";
-import IsResponsive from "./ui/IsResponsive";
 import AppLayout from "./ui/AppLayout";
 
 import { Toaster } from "react-hot-toast";
@@ -19,7 +18,6 @@ import Booking from "./pages/Booking";
 import Checkin from "./pages/Checkin";
 import ProtectedRoute from "./ui/ProtectedRoute";
 import { DarkModeProvider } from "./context/DarkModeContext";
-import { useMediaQuery } from "react-responsive";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,9 +28,7 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
-
-  return isBigScreen ? (
+  return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
       <GlobalStyles />
@@ -83,8 +79,6 @@ function App() {
         }}
       />
     </QueryClientProvider>
-  ) : (
-    <IsResponsive />
   );
 }
 
